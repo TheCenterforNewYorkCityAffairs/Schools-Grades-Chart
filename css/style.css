@@ -1,6 +1,6 @@
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
-  margin: 1em;
+  margin: 0;
   color: dimgray;
 }
 #chart{
@@ -8,6 +8,20 @@ body {
 	margin-left: 15vw;
 	text-align: center;
 	margin-top: 30px;
+}
+
+.chart-container{
+	width: 80vw;
+	margin-left: 10vw;
+	position: relative;
+}
+
+.grades{
+	position: absolute;
+}
+.grade{
+	margin-left: 10vw;
+	padding: 5vw;
 }
 
 h1 {
@@ -31,26 +45,27 @@ h1 {
 	border-radius: 10px;
 	border: solid 0.5px dimgray;
 	margin-left:10px;
+	opacity: 0.6;
 }
 
 .asian{
-	background: #867588;
+	background: #36173A;
 }
 
 .black{
-	background: #68a19e;
+	background: #00635D;
 }
 
 .hispanic{
-	background: #eee3ac;
+	background: #E3D26F;
 }
 
 .other{
-	background: #d5a56b;
+	background: #BB6B00;
 }
 
 .white{
-	background: #af6c7e;
+	background: #7B0828;
 }
 
 .leyend-elements span{
@@ -70,3 +85,31 @@ h1 {
 	cursor: pointer;
 
 }
+.noline{
+	stroke: solid transparent;
+
+
+}
+.noline.yesline{
+	stroke: solid red;
+
+
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 1.5px;
+}
+
+.node{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+
+.line-2-cirkel {
+  stroke: #5ca9da;
+}
+
+
